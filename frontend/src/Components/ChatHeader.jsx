@@ -75,7 +75,7 @@ const ChatHeader = () => {
 
             {/** Confirmation Modal */}
             {showConfirm && (
-                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm">
+                <div className="fixed inset-0 flex items-center justify-center bg-base-800 backdrop-blur-sm">
                     <div className="bg-white p-5 rounded-lg shadow-lg">
                         <h3 className="text-lg font-bold mb-4">Are you sure you want to clear the chat?</h3>
                         <div className="flex justify-end gap-3">
