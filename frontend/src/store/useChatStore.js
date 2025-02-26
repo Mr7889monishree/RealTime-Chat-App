@@ -98,4 +98,21 @@ export const useChatStore = create((set, get) => ({
       get().markMessagesAsRead(selectedUser._id); // ✅ Mark messages as read when user is clicked
     }
   },
+  clearChat: async (userId) => {
+    try {
+        await axiosInstance.delete(`/messages/clear/${userId}`);
+
+        set((state) => ({
+            messages: state.messages.filter(
+                (msg) => msg.senderId !== userId && msg.receiverId !== userId
+            ),
+        }));
+
+        toast.success("Chat cleared successfully!");
+    } catch (error) {
+        toast.error(error.response?.data?.message || "Failed to clear chat.");
+    }
+},
+
 }));
+
