@@ -1,4 +1,4 @@
-🗨️ Chatty App – Real-Time Chat Application
+🗨️ ConvoHub  – Real-Time Chat Application
 Chatty App is a real-time chat application built using the MERN stack with Socket.io for instant messaging. It provides a seamless chatting experience with a modern UI and real-time updates.
 
 🛠️ Tech Stack
